@@ -21,6 +21,10 @@ li {
     background-color: whitesmoke;
 }
 
+name {
+    font-size: 20px;
+}
+
 body {
     display: flex;
     justify-content: center;
