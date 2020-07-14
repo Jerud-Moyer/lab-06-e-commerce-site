@@ -1,8 +1,8 @@
 // import functions and grab DOM elements
-import { renderGuitarAmps } from './render-guitar-amps.js';
+
 // initialize state
 const jcm800 = {
-    code: 'JCM-800',
+    code: 'jcm800',
     name: 'Marshall',
     image: '../images/Marshall.jpg',
     description: 'A British rock and Roll classic for the ages.',
@@ -12,7 +12,7 @@ const jcm800 = {
 };
 
 const markV = {
-    code: 'Mark-V',
+    code: 'markv',
     name: 'Mesa-Boogie',
     image: '../images/Mesa.jpg',
     description: 'California Crunch at it\'s finest.',
@@ -22,18 +22,17 @@ const markV = {
 };
 
 const dragonSlayer = {
-        code: 'Dragon-Slayer',
-        name: 'Lanham',
-        image: '../images/Lanham.jpg',
-        description: 'Hand built in Portland, Oregon and guaranteed to melt faces.',
-        category: 'tube-amp',
-        price: 2400.00,
-        cost: 700.00
-    };
-}
+    code: 'dragonslayer',
+    name: 'Lanham',
+    image: '../images/Lanham.jpg',
+    description: 'Hand built in Portland, Oregon and guaranteed to melt faces.',
+    category: 'tube-amp',
+    price: 2400.00,
+    cost: 700.00
+};
 
 const twinReverb = {
-    code: 'Twin- Reverb',
+    code: 'twinReverb',
     name: 'Fender',
     image: '../images/Fender.jpg',
     description: 'THE classic American tube tone!',
@@ -43,7 +42,7 @@ const twinReverb = {
 };
 
 const rockverb = {
-    code: 'Rockverb',
+    code: 'rockverb',
     name: 'Orange',
     image: '../images/orange.jpg',
     description: 'From classic to doomtastic, this one\'s got it all!',
@@ -51,6 +50,9 @@ const rockverb = {
     price: 2300.00,
     cost: 600.00
 };
+
+const ampArr = [jcm800, markV, dragonSlayer, twinReverb, rockverb];
+export default ampArr;
 
 
 
