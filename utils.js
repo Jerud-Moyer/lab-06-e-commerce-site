@@ -8,3 +8,8 @@ export function findById(someArray, someId) {
     }
     return item;
 }
+
+export function calcLineItem(quantity, price) {
+    const userCost = quantity * price;
+    return Math.round(userCost * 100) / 100;
+}
