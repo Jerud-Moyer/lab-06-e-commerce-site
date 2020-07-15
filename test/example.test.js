@@ -25,8 +25,7 @@ test('renders a guitar amp', (expect) => {
     // Call the function you're testing and set the result to a const
     const dom = renderGuitarAmps(jcm800);
     const html = dom.outerHTML;
-    console.log(dom);
-    console.log(html);
+   
 
 
     //Expect

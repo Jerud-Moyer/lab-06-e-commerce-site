@@ -2,7 +2,7 @@
 
 // initialize state
 const jcm800 = {
-    code: 'jcm800',
+    id: 'jcm800',
     name: 'Marshall',
     image: '../images/Marshall.jpg',
     description: 'A British rock and Roll classic for the ages.',
@@ -12,7 +12,7 @@ const jcm800 = {
 };
 
 const markV = {
-    code: 'markv',
+    id: 'markv',
     name: 'Mesa-Boogie',
     image: '../images/Mesa.jpg',
     description: 'California Crunch at it\'s finest.',
@@ -22,7 +22,7 @@ const markV = {
 };
 
 const dragonSlayer = {
-    code: 'dragonslayer',
+    id: 'dragonslayer',
     name: 'Lanham',
     image: '../images/Lanham.jpg',
     description: 'Hand built in Portland, Oregon and guaranteed to melt faces.',
@@ -32,7 +32,7 @@ const dragonSlayer = {
 };
 
 const twinReverb = {
-    code: 'twinReverb',
+    id: 'twinReverb',
     name: 'Fender',
     image: '../images/Fender.jpg',
     description: 'THE classic American tube tone!',
@@ -42,7 +42,7 @@ const twinReverb = {
 };
 
 const rockverb = {
-    code: 'rockverb',
+    id: 'rockverb',
     name: 'Orange',
     image: '../images/orange.jpg',
     description: 'From classic to doomtastic, this one\'s got it all!',
@@ -51,8 +51,8 @@ const rockverb = {
     cost: 600.00
 };
 
-const ampArr = [jcm800, markV, dragonSlayer, twinReverb, rockverb];
-export default ampArr;
+const amps = [jcm800, markV, dragonSlayer, twinReverb, rockverb];
+export default amps;
 
 
 

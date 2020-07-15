@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    max-width: 750px;
+    border-collapse: collapse;
+    border: solid 2px;  
+
+}
+
+button {
+    margin: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+thead {
+    background-color: lightslategray;
+    color: whitesmoke;
+}
+
+tfoot {
+    background-color: lightslategray;
+    color: black;
+}
+
+#order

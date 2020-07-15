@@ -1,4 +1,4 @@
-import ampArr from './ampCity.js';
+import ampArr from '../data/ampCity.js';
 import { renderGuitarAmps } from './render-guitar-amps.js';
 const ampList = document.querySelector('#amps');
 
