@@ -1,3 +1,6 @@
+import { findById, getCart, sendCart } from './utils.js';
+
+
 export function renderGuitarAmps(amp) {
     
     const liEl = document.createElement('li');
@@ -23,6 +26,23 @@ export function renderGuitarAmps(amp) {
     const buttonEl = document.createElement('button');
     buttonEl.value = amp.code;
     buttonEl.textContent = 'Add';
+    buttonEl.addEventListener('click', () => {
+        const rawCart = getCart();
+        let cartItem = findById(rawCart, amp.id);
+        if (cartItem) {
+            const selectedItem = {
+                id: amp.id,
+                quantity: 1
+            };
+            rawCart.push(selectedItem);
+        } else {
+            cartItem++;
+        }
+        sendCart(rawCart);
+        alert('1 ' + amp.name + ' added to cart');
+
+        
+    });
     pEl.append(buttonEl);
 
     liEl.append(pEl);

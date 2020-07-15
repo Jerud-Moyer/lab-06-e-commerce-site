@@ -36,3 +36,15 @@ export function calcOrderTotal(carts, amps) {
     }
     return orderTotal;
 }
+
+export function getCart() {
+    const localCart = localstorage.getItem(cart);
+    const cartArray = JSON.parse(localCart) || [];
+
+    return cartArray;
+}
+
+export function pushCart(array) {
+    const stringItems = JSON.stringify(array);
+    localStorage.setItem(cart, stringItems);
+}
