@@ -13,3 +13,11 @@ export function calcLineItem(quantity, price) {
     const userCost = quantity * price;
     return Math.round(userCost * 100) / 100;
 }
+
+
+export function toUSD(number) {
+    return number.toLocaleString('en-US', { 
+        style: 'currency', 
+        currency: 'USD' 
+    });
+}

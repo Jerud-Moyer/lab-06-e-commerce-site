@@ -27,5 +27,6 @@ export function renderGuitarAmps(amp) {
 
     liEl.append(pEl);
     return liEl;
+    
 
 }
