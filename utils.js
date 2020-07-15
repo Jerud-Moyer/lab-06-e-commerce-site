@@ -1,3 +1,5 @@
+import cart from '../data/cart.js';
+
 export function findById(someArray, someId) {
     let item = {};
     for (let i = 0; i < someArray.length; i ++) {
@@ -20,4 +22,17 @@ export function toUSD(number) {
         style: 'currency', 
         currency: 'USD' 
     });
+}
+
+
+export function calcOrderTotal(carts, amps) {
+    let orderTotal = 0;
+
+    for (let i = 0; i < carts.length; i++) {
+        const lineItem = carts[i];
+        const amp = findById(amps, lineItem.id);
+        orderTotal += calcLineItem(lineItem.quantity, amp.price);
+        
+    }
+    return orderTotal;
 }
