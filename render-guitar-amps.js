@@ -1,5 +1,4 @@
-import { findById, getCart, sendCart } from './utils.js';
-
+import { findById, getCart, pushCart } from './utils.js';
 
 export function renderGuitarAmps(amp) {
     
@@ -38,9 +37,9 @@ export function renderGuitarAmps(amp) {
         } else {
             cartItem++;
         }
-        sendCart(rawCart);
+        pushCart(rawCart);
         alert('1 ' + amp.name + ' added to cart');
-
+            
         
     });
     pEl.append(buttonEl);

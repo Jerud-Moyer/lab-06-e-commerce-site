@@ -1,4 +1,5 @@
-import cart from '../data/cart.js';
+//import cart from '../data/cart.js';
+
 
 export function findById(someArray, someId) {
     let item = {};
@@ -38,7 +39,7 @@ export function calcOrderTotal(carts, amps) {
 }
 
 export function getCart() {
-    const localCart = localstorage.getItem(cart);
+    const localCart = localStorage.getItem('cart');
     const cartArray = JSON.parse(localCart) || [];
 
     return cartArray;
@@ -46,5 +47,5 @@ export function getCart() {
 
 export function pushCart(array) {
     const stringItems = JSON.stringify(array);
-    localStorage.setItem(cart, stringItems);
+    localStorage.setItem('cart', stringItems);
 }

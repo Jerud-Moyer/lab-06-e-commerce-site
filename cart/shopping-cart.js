@@ -1,10 +1,11 @@
-import cart from '../data/cart.js';
+import { getCart } from '../utils.js';
 import amps from '../data/ampCity.js';
 import { findById, calcOrderTotal } from '../utils.js';
 import { renderLineItems } from './render-line-items.js';
 
 const tbody = document.querySelector('tbody');
 const orderTotalCell = document.getElementById('order-total-cell');
+const cart = getCart();
 
 for (let i = 0; i < cart.length; i++) {
     const lineItem = cart[i];
