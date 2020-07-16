@@ -21,7 +21,6 @@ orderTotalCell.textContent = orderTotal;
 const subButton = document.getElementById('order-button');
 subButton.addEventListener('click', () => {
     alert(JSON.stringify(cart, true, 2));
-    console.log(subButton);
     window.location = '../index.html';
     localStorage.removeItem('cart');
 });

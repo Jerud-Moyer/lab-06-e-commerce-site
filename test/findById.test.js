@@ -35,7 +35,7 @@ test('it should take in an id and an array and return the matching item', functi
     //Arrange
     // Set up your parameters and expectations
 
-    const myId1 = 'spot'
+    const myId1 = 'spot';
     const myId2 = 'jumpy';
     const expected1 = spot;
     const expected2 = jumpy;

@@ -2,7 +2,9 @@ table {
     width: 100%;
     max-width: 750px;
     border-collapse: collapse;
-    border: solid 2px;  
+    border: solid 2px;
+    margin: 25px; 
+     
 
 }
 
@@ -22,6 +24,20 @@ thead {
 tfoot {
     background-color: lightslategray;
     color: black;
+    display: flex;
+    justify-content: flex-end; 
 }
 
-#order
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    margin: 20px;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: whitesmoke 1px 1px;
+}
