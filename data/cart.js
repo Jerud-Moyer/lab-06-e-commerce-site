@@ -16,4 +16,4 @@ const cart = [{
     price: 2500
 }];
 
-export default cart;
+//export default cart;
