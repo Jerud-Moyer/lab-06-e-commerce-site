@@ -27,6 +27,7 @@ li {
     margin: 20px;
     padding: 10px;
     background-color: whitesmoke;
+    list-style: none;
 }
 
 name {
@@ -43,4 +44,8 @@ body {
 
 a {
     margin: 20px;
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: whitesmoke 1px 1px;
 }
