@@ -23,5 +23,5 @@ subButton.addEventListener('click', () => {
     alert(JSON.stringify(cart, true, 2));
     console.log(subButton);
     window.location = '../index.html';
-    localStorage.clear;
-})
+    localStorage.removeItem('cart');
+});
