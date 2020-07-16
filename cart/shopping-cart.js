@@ -14,9 +14,14 @@ for (let i = 0; i < cart.length; i++) {
     
     tbody.appendChild(dom);
 }
-console.log(tbody);
-
 
 const orderTotal = calcOrderTotal(cart, amps);
 orderTotalCell.textContent = orderTotal;
 
+const subButton = document.getElementById('order-button');
+subButton.addEventListener('click', () => {
+    alert(JSON.stringify(cart, true, 2));
+    console.log(subButton);
+    window.location = '../index.html';
+    localStorage.clear;
+})
