@@ -21,11 +21,10 @@ thead {
     color: whitesmoke;
 }
 
-tfoot {
+#total-row {
     background-color: lightslategray;
-    color: black;
-    display: flex;
-    justify-content: flex-end; 
+    color: whitesmoke;
+     
 }
 
 main {
@@ -41,3 +40,4 @@ a {
     font-weight: bolder;
     text-shadow: whitesmoke 1px 1px;
 }
+
