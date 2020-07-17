@@ -20,4 +20,4 @@ test('should add all line totals together', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     expect.equal(actual, expected);
-});
+});*/
