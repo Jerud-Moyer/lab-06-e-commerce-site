@@ -34,7 +34,7 @@ const dragonSlayer = {
 const twinReverb = {
     id: 'twinReverb',
     name: 'Fender',
-    image: '../images/Fender.jpg',
+    image: '../images/fender.jpg',
     description: 'THE classic American tube tone!',
     category: 'combo-amp',
     price: 2100.00,
